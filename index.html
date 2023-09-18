@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./readopia.ico" type="image/x-icon" />
+    <title>Readopia - Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/38647df40d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-primary user-select-none">
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 100vh"
+    >
+      <div class="bg-light shadow rounded p-3 w-50">
+        <h1 class="text-primary text-center my-5 display-1">Login</h1>
+        <form>
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="Username"
+            name="uname"
+            id="uname"
+            required
+          />
+          <input
+            type="password"
+            class="form-control mb-3"
+            placeholder="Password"
+            name="pword"
+            id="pword"
+            required
+          />
+          <div class="mb-3" id="alertContent"></div>
+          <button type="button" onclick="login()" class="btn btn-primary w-100">
+            Sign In
+          </button>
+          <p class="my-3 text-center">
+            New to our website?
+            <a href="./signup.html" class="">Sign Up Now</a>
+          </p>
+          <hr />
+          <h4 class="text-center text-muted">
+            <i class="fa-solid fa-book-open-reader"></i> Readopia
+          </h4>
+          <p class="text-center text-muted" style="font-size: 8pt">
+            Made by Anoof Abdul Kadar
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- <script>
+      login = () => {
+        const user = uname.value;
+        localStorage.setItem("user", user);
+        //redirection
+        window.location = "home.html";
+      };
+    </script> -->
+    <script src="./logic.js"></script>
+  </body>
+</html>
